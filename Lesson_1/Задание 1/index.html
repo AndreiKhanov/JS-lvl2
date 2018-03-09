@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      window.onload = function() {
+        var menuItem1 = new MenuItem('/', 'Главная', 'remove');
+        var menuItem2 = new MenuItem('/about', 'О нас', 'remove');
+        var menuItem3 = new MenuItem('/catalog', 'Каталог', 'remove');
+
+        var menu = new Menu('menu', 'menu', [
+          menuItem1, menuItem2, menuItem3
+        ]);
+        document.body.appendChild(menu.render());
+        remove();
+      }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>

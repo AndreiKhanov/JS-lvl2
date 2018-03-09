@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src="menu.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+      window.onload = function() {
+        var menuItem1 = new MenuItem('/', 'Главная',false, 'remove');
+        var menuItem2 = new MenuItem('/about', 'О нас',true, 'remove');
+        var menuItem3 = new MenuItem('/catalog', 'Каталог',true, 'remove');
+
+        var menuSubitem1 = new MenuSubItem('/contacts','Пункт1');
+        var menuSubitem2 = new MenuSubItem('/contacts','Пункт2');
+        var menuSubitem3 = new MenuSubItem('/contacts','Пункт3');
+
+        var menu = new Menu('menu', 'menu', [
+          menuItem1, menuItem2, menuItem3]);
+        var subItem = new MenuSub('menu', 'menu', [
+            menuSubitem1, menuSubitem2, menuSubitem3]);
+
+        document.body.appendChild(menu.render());
+        document.getElementById('sub1').appendChild(subItem.render());
+        document.getElementById('sub2').appendChild(subItem.render());
+        remove();
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

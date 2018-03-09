@@ -1,0 +1,11 @@
+
+li {
+    width: 80px;
+    background: url('X.png') no-repeat;
+    background-position: top right;
+    margin-bottom: 15px;
+}
+ul {
+	margin-top: 15px;
+}
+
